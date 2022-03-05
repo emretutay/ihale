@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<h3>Makale Oluştur</h3>
+<hr>
+
+{% from "includes/formhelpers.html" import render_field %}
+
+<form method = "post">
+        {{ render_field(form.offered_price,class = "form-control") }}
+        
+        
+        
+    <button type="submit" class="btn btn-danger">İhale Ekle</button>
+</form>
+
+{% endblock body %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+{% if ihale %}
+
+<h4>{{ihale.title}}</h4>
+<hr>
+Yazar : {{ihale.start_date}}
+<hr>
+Tarih : {{ihale.end_date}}
+<hr>
+Tarih : {{ihale.content}}
+<hr>
+Tarih : {{ihale.category}}
+<hr>
+Tarih : {{ihale.start_price}}
+<hr>
+Tarih : {{ihale.offered_price}}
+<hr>
+Tarih : {{ihale.state}}
+<hr>
+
+
+
+
+
+
+
+
+
+{% else %}
+
+<div class = "alert alert-warning">
+    Böyle bir ihale bulunmuyor
+</div>
+{% endif %}
+
+{% endblock body %}
